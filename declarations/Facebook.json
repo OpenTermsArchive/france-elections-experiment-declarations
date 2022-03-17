@@ -28,7 +28,7 @@
         "Hate Speech": {
           "fetch": "https://transparency.fb.com/fr-fr/policies/community-standards/hate-speech/"
         },
-        "Child Sexual Exploitation": {
+        "Child Exploitation": {
           "fetch": "https://transparency.fb.com/fr-fr/policies/community-standards/child-sexual-exploitation-abuse-nudity/"
         },
         "Violence Incitement": {
@@ -58,16 +58,18 @@
         "Sexual Solicitation": {
           "fetch": "https://transparency.fb.com/fr-fr/policies/community-standards/sexual-solicitation/"
         },
-        "Inauthentic Behaviour and Platform Manipulation": {
+        "Platform Manipulation": {
           "fetch": "https://transparency.fb.com/fr-fr/policies/community-standards/inauthentic-behavior/"
         },
         "Privacy Violations": {
           "fetch": "https://transparency.fb.com/fr-fr/policies/community-standards/privacy-violations-image-privacy-rights/"
-        },
-        "Deceased Users": {
-          "fetch": "https://transparency.fb.com/fr-fr/policies/community-standards/memorialization/"
         }
       }
+    },
+    "Deceased Users": {
+      "fetch": "https://transparency.fb.com/fr-fr/policies/community-standards/memorialization/",
+      "select": ["._9nrm", "._9q49", "._9p7c"],
+      "remove": ["._9p72", "svg", "._9ooi", "._9q3_"]
     }
   }
 }
