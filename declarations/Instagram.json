@@ -21,7 +21,7 @@
         "Hate Speech": {
           "fetch": "https://transparency.fb.com/fr-fr/policies/community-standards/hate-speech/"
         },
-        "Child Sexual Exploitation": {
+        "Child Exploitation": {
           "fetch": "https://transparency.fb.com/fr-fr/policies/community-standards/child-sexual-exploitation-abuse-nudity/"
         },
         "Violence Incitement": {
@@ -39,6 +39,12 @@
         "Harassment": {
           "fetch": "https://transparency.fb.com/fr-fr/policies/community-standards/bullying-harassment/"
         },
+        "Adult Nudity": {
+          "fetch": "https://transparency.fb.com/fr-fr/policies/community-standards/adult-nudity-sexual-activity/"
+        },
+        "Sexual Solicitation": {
+          "fetch": "https://transparency.fb.com/fr-fr/policies/community-standards/sexual-solicitation/"
+        },
         "Intellectual Property": {
           "fetch": "https://help.instagram.com/126382350847838",
           "select": ["div[role=\"main\"]"],
@@ -49,14 +55,19 @@
           ],
           "filter": ["removeTrackingIDs"],
           "executeClientScripts": true
-        },
-        "Adult Nudity": {
-          "fetch": "https://transparency.fb.com/fr-fr/policies/community-standards/adult-nudity-sexual-activity/"
-        },
-        "Sexual Solicitation": {
-          "fetch": "https://transparency.fb.com/fr-fr/policies/community-standards/sexual-solicitation/"
         }
       }
+    },
+    "Copyright Claims Policy": {
+      "fetch": "https://help.instagram.com/454257084652404",
+      "select": ["div[role=\"main\"]"],
+      "remove": [
+        "div[aria-label=\"Copier le lien\"]",
+        "[id='Articles connexes']",
+        "fieldset"
+      ],
+      "filter": ["removeTrackingIDs"],
+      "executeClientScripts": true
     }
   }
 }

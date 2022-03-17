@@ -1,0 +1,85 @@
+{
+  "name": "Twitter",
+  "documents": {
+    "Terms of Service": {
+      "fetch": "https://twitter.com/fr/tos",
+      "select": [".p22-chapters-container"],
+      "remove": [".p05-chapter-navigation", "[style='display: none;']"]
+    },
+    "Privacy Policy": {
+      "fetch": "https://twitter.com/fr/privacy",
+      "remove": [
+        ".twtr-icon--base",
+        ".p05-chapter-navigation",
+        "[style='display: none;']",
+        ".twtr-overlay__icon",
+        ".p21-hidden-content"
+      ],
+      "select": [
+        ".p02-statement-masthead",
+        ".p03-scrolling-checklist",
+        ".p22-chapters-container",
+        ".cr01-section"
+      ]
+    },
+    "Community Guidelines": {
+      "fetch": "https://help.twitter.com/fr/rules-and-policies/twitter-rules",
+      "select": ["#twtr-main"],
+      "remove": [
+        ".u11__breadcrumbs",
+        ".b24-share-tweet",
+        ".b01__headline.twtr-type--headline-md.inherit"
+      ],
+      "sections": {
+        "select": ["#twtr-main"],
+        "remove": [
+          ".u11__breadcrumbs",
+          ".b24-share-tweet",
+          ".b01__headline.twtr-type--headline-md.inherit"
+        ],
+        "Community Guidelines - Self-harm": {
+          "fetch": "https://help.twitter.com/fr/rules-and-policies/glorifying-self-harm"
+        },
+        "Community Guidelines - Hate Speech": {
+          "fetch": "https://help.twitter.com/fr/rules-and-policies/hateful-conduct-policy"
+        },
+        "Community Guidelines - Child Exploitation": {
+          "fetch": "https://help.twitter.com/fr/rules-and-policies/sexual-exploitation-policy"
+        },
+        "Community Guidelines - Violence Incitement": {
+          "fetch": "https://help.twitter.com/fr/rules-and-policies/glorification-of-violence"
+        },
+        "Community Guidelines - Violent Organizations": {
+          "fetch": "https://help.twitter.com/fr/rules-and-policies/violent-groups"
+        },
+        "Community Guidelines - Spam": {
+          "fetch": "https://help.twitter.com/fr/rules-and-policies/platform-manipulation"
+        },
+        "Community Guidelines - Regulated Goods": {
+          "fetch": "https://help.twitter.com/fr/rules-and-policies/regulated-goods-services"
+        },
+        "Community Guidelines - Harassment": {
+          "fetch": "https://help.twitter.com/fr/rules-and-policies/abusive-behavior"
+        },
+        "Community Guidelines - Platform Manipulation": {
+          "fetch": "https://help.twitter.com/fr/rules-and-policies/platform-manipulation"
+        },
+        "Community Guidelines - Privacy Violations": {
+          "fetch": "https://help.twitter.com/fr/rules-and-policies/personal-information"
+        },
+        "Copyright Claims Policy": {
+          "fetch": "https://help.twitter.com/fr/rules-and-policies/copyright-policy"
+        }
+      }
+    },
+    "Deceased Users": {
+      "fetch": "https://help.twitter.com/fr/rules-and-policies/contact-twitter-about-media-on-a-deceased-family-members-account",
+      "select": ["#twtr-main"],
+      "remove": [
+        ".u11__breadcrumbs",
+        ".b24-share-tweet",
+        ".b01__headline.twtr-type--headline-md.inherit"
+      ]
+    }
+  }
+}
