@@ -47,11 +47,13 @@
           "fetch": "https://transparency.fb.com/fr-fr/policies/community-standards/sexual-solicitation/"
         },
         "Intellectual Property": {
-          "fetch": "https://help.instagram.com/126382350847838",
+          "fetch": "https://help.instagram.com/126382350847838?locale2=fr_FR",
           "select": ["div[role=\"main\"]"],
           "remove": [
             "div[aria-label=\"Copier le lien\"]",
+            "div[aria-label=\"Copy link\"]",
             "[id='Articles connexes']",
+            "[id='Related Articles']",
             "fieldset"
           ],
           "filter": ["removeTrackingIDs"],
@@ -64,7 +66,9 @@
       "select": ["div[role=\"main\"]"],
       "remove": [
         "div[aria-label=\"Copier le lien\"]",
+        "div[aria-label=\"Copy link\"]",
         "[id='Articles connexes']",
+        "[id='Related Articles']",
         "fieldset"
       ],
       "filter": ["removeTrackingIDs"],
